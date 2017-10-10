@@ -27,13 +27,6 @@ public class PriceServiceTest {
 	}
 
 	@Test
-	public void testAdultNonEmployeeEdgeCase() {
-		Customer customer = new Customer();
-		customer.setAge(18);
-		assertEquals("an adult non employee should be the base price", 10, service.calculatePrice(customer, 10), 0);
-	}
-
-	@Test
 	public void testAdultEmployee() {
 		Customer customer = new Customer();
 		customer.setAge(20);
@@ -57,3 +50,25 @@ public class PriceServiceTest {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ @Test
+	public void testAdultNonEmployeeEdgeCase() {
+		Customer customer = new Customer();
+		customer.setAge(18);
+		assertEquals("an adult non employee should be the base price", 10, service.calculatePrice(customer, 10), 0);
+	}
+*/

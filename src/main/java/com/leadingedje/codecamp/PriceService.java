@@ -12,7 +12,7 @@ public class PriceService {
 		double price = basePrice;
 		if (customer != null) {
 			if (customer.getAge() < 18) {
-				price = basePrice * .8;
+				price = price * .8;
 			}
 			if (customer.isEmployee()) {
 				price = price * .5;
